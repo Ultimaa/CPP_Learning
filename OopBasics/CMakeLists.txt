@@ -8,3 +8,4 @@ add_compile_options(-Wall -Wextra -pedantic -Werror)
 
 # add the executable
 add_executable(ruleOf5 ruleOf5.cpp)
+add_executable(inheritance inheritance.cpp)
