@@ -8,4 +8,5 @@
 3. [Polymorphism](https://github.com/Ultimaa/CPP_Basics_Learning/blob/master/OopBasics/polymorphism.cpp) - Assigning classes to a class higher in the inheritance hierarchy. In the example, using an array of generic type classes to hold inheriting classes.
 
 **Spoj**
-*Various types of tasks from [pl.spoj.com](https://pl.spoj.com/) and [spoj.com](https://spoj.com/).*
+
+*-Various types of tasks from [pl.spoj.com](https://pl.spoj.com/) and [spoj.com](https://spoj.com/).*
