@@ -1,5 +1,5 @@
 add_subdirectory(JSUMDUZE)
 
-add_custom_target(test1
+add_custom_target(SpojSumDuze
                   COMMAND "./JSUMDUZE/JSUMDUZETest"
                   DEPENDS JSUMDUZETest)

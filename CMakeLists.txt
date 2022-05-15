@@ -7,6 +7,8 @@ add_compile_options(-Wall -Wextra -pedantic -Werror)
 include(GTest.cmake)
 
 add_subdirectory(OopBasics)
+add_subdirectory(CppBasics)
 add_subdirectory(Spoj)
+
 
 enable_testing()
