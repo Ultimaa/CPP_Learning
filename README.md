@@ -6,6 +6,7 @@
 **C++ Basics**
 1. [Functions](https://github.com/Ultimaa/CPP_Basics_Learning/blob/master/CppBasics/functions.cpp) - Basics of overloaded functions, templated and lambda. 
 2. [Namespaces](https://github.com/Ultimaa/CPP_Basics_Learning/blob/master/CppBasics/namespaces.cpp) - Anonymouse and Nested namespaces. 
+3. [Pointers](https://github.com/Ultimaa/CPP_Basics_Learning/blob/master/CppBasics/pointers.cpp) - Raw and smart pointers. 
 
 
 **Oop Basics**

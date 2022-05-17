@@ -21,29 +21,19 @@ int main(){
     //Smart pointers
     std::cout << "Smart pointers:" << std::endl;
     std::unique_ptr<int> uniqueP = std::make_unique<int>(10);
-    std::cout << "Unique pointer - auto delete after scope ends" << *uniqueP.get() << std::endl;
+    std::cout << "Unique pointer - auto delete after scope ends. Unique_ptr value :" << *uniqueP << std::endl;
+    
     std::shared_ptr<int> sharedP = std::make_shared<int>(10);
     std::cout << "Shared pointer - can be copy, has reference couter, when counter reach zero then call destructor " << std::endl;
-    std::cout << "Shared pointer value: " << *sharedP << "Shared Pointer reference counter: " << sharedP.use_count() << std::endl;
-    //std::weak_ptr<int> weakP = std::make_shared<int>(10);
-
-
-
-
-    //std::cout << " " << *weakP << std::endl;
-
-    std::shared_ptr < int > sptr(new int);
-    std::shared_ptr < int > sptr2;
-
-    std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
-    sptr2 = sptr;
-    std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
-
+    std::cout << "Shared pointer value: " << *sharedP << " Shared Pointer reference counter: " << sharedP.use_count() << std::endl;
+    
+    std::weak_ptr<int> weakP = sharedP;
+    std::cout << "A weak_ptr provides access to an object that is owned by one or more shared_ptr instances, but does not participate in reference counting." << std::endl;
+    if (auto tmp = weakP.lock())
     {
-        std::shared_ptr < int > sptr3 = sptr2;
-        std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
+        std::cout << "Able to lock weak_ptr, value is: " << *tmp << std::endl;
+    }else{
+        std::cout << "Unable to lock weak_ptr because shared is expired" << std::endl;
     }
-
-    std::cout << "sptr: " << sptr.use_count() << " sptr2: " << sptr2.use_count() << '\n';
     return 0;
 }

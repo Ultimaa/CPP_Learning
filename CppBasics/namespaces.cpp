@@ -1,7 +1,7 @@
 #include <iostream>
 
 /**
- * Snonymouse namespace - only accesed in this this file
+ * Anonymouse namespace - only accesed in this this file
  */
 namespace{ 
     void consoleText(){

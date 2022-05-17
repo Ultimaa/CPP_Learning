@@ -15,7 +15,7 @@ T sumTemplate(T a, T b){
 
 
 int main(){
-    //oberloaded function
+    //overloaded function
     std::cout << "3 + 11 is: " << sum(3,11) << std::endl;
     std::cout << "3.5 + 7.33 is: " << sum(3.5,7.33) << std::endl;
 
